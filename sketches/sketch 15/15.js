@@ -1,16 +1,16 @@
 function preload() {
     // preload OTF font file
-    font = loadFont('assets/SpaceMono-Bold.ttf')
+    font = loadFont('assets/ComedySketchDemoRegular.ttf')
 }
 
 function setup() {
     createCanvas(1000, 1000)
-    
-    fSize = 1000
-    // blendMode()
+    background(23,222,143)
+    fSize = 850
+    // blendMode(DIFFERENCE)
     textFont(font)
     textSize(fSize)
-    msg = 'D'
+    msg = 'Dd'
     pts = font.textToPoints(msg, 20, 20, fSize, {
         sampleFactor: 0.1, // increase for more points
         simplifyThreshold: 0.0 // increase to remove collinear points
@@ -23,18 +23,13 @@ function setup() {
 }
 
 function draw() {
-    background(0)
+    background(23,95,143)
 
-    // 1. interactive
-    // const d = dist(mouseX, mouseY, width/2, height/2)
-    // const angle = atan2(mouseY-height/2, mouseX-width/2)
-
-    // 2. animate on its own
-    const d = 10 + sin(frameCount/30) * 120
-    const angle = frameCount/100.
+    const d = 5 + sin(frameCount/30) * 80
+    const angle = frameCount/400
 
     push()
-    translate(60, height*5/8)
+    translate(20, height*5/6)
 
     for (let i = 0; i < pts.length; i++) {
         const p = pts[i]
@@ -45,4 +40,19 @@ function draw() {
         pop()
     }
     pop()
+
+    let inc = TWO_PI / 0;
+        for (let i = 0; i <300; i++) {
+        line(i * 5, 1000, i * 5, 10 + sin(300) * 50.0);
+        stroke(441,293,333);
+        a = 300 + inc;
+    }
 }
+
+
+
+
+function mousePressed(){
+    saveCanvas("sketch 15","png")
+  }
+  

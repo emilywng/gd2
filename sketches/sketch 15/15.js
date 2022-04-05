@@ -29,7 +29,7 @@ function draw() {
     const angle = frameCount/400
 
     push()
-    translate(20, height*5/6)
+    translate(20, height*5/6) ///changes location
 
     for (let i = 0; i < pts.length; i++) {
         const p = pts[i]

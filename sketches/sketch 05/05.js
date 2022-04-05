@@ -23,3 +23,9 @@ function draw() {
         a = a + inc;
     }
 }
+
+
+function mousePressed(){
+    saveCanvas("sketch 05","png")
+  }
+  

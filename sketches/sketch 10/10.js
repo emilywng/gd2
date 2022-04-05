@@ -29,3 +29,9 @@ function draw(){
 
 
 }
+
+
+function mousePressed(){
+    saveCanvas("sketch 10","png")
+  }
+  

@@ -1,0 +1,184 @@
+h1{
+    font-size: 80px;
+    position: relative;
+    top: 00px;
+    right: -30px;
+}
+mark{
+    font-style: italic;
+    background-color: rgb(251, 255, 0);
+}
+body{ 
+    display: flex;
+    background: #131313;
+    color: #fff;
+    font-family: 'Fira Mono', monospace;
+  }
+  
+  h1{
+    animation: glitch 1s linear infinite;
+  }
+  
+  @keyframes glitch{
+    2%,64%{
+      transform: translate(2px,0) skew(0deg);
+    }
+    4%,60%{
+      transform: translate(-2px,0) skew(0deg);
+    }
+    62%{
+      transform: translate(0,0) skew(5deg); 
+    }
+  }
+  
+  h1:before,
+  h1:after{
+    content: attr(title);
+    position: absolute;
+    left: 20;
+  }
+  
+  h1:before{
+    animation: glitchTop 1s linear infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  }
+  
+  @keyframes glitchTop{
+    2%,64%{
+      transform: translate(2px,-2px);
+    }
+    4%,60%{
+      transform: translate(-2px,2px);
+    }
+    62%{
+      transform: translate(13px,-1px) skew(-13deg); 
+    }
+  }
+  
+  h1:after{
+    animation: glitchBotom 1.5s linear infinite;
+    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  }
+  
+  @keyframes glitchBotom{
+    2%,64%{
+      transform: translate(-2px,0);
+    }
+    4%,60%{
+      transform: translate(-2px,0);
+    }
+    62%{
+      transform: translate(-22px,5px) skew(21deg); 
+    }
+  }
+
+.firstimage{
+    position: relative;
+    top: 170px;
+    right: 0px;
+}
+h2{
+    font-size: 40px;
+    font-weight: lighter;
+    position: relative;
+    top: 350px;
+    right: 435px;
+}
+
+h3{
+    font-size:80px;
+    position: relative;
+    transform: rotate(90deg);
+    top: -1050px;
+    left: -960px;
+}
+h4{
+    font-size: 40px;
+    font-weight: lighter;
+    position: relative;
+    text-align: right;
+    top: 350px;
+    left: -120px;
+}
+/* FINAL POSTER, GOOGLE SHEETS */
+h5{
+    font-size: 15px;
+    font-weight: lighter;
+    color: white;
+    white-space: nowrap;
+    position: relative;
+    top: 1150px;
+    right: 1225px;
+    
+}
+h6{
+    font-size: 40px;
+    display: inline-block;
+    font-weight: lighter;
+    color: white;
+    white-space: initial;
+    position: relative;
+    top: 1300px;
+    right: 2100px;
+}
+
+.p2-image{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 1400px;
+    right: 1580px;
+}
+
+h7{
+    font-size: 15px;
+    font-weight: lighter;
+    color: white;
+    white-space: nowrap;
+    position: relative;
+    top: 2410px;
+    right: 1783px;
+}
+h8{
+    font-size:50px;
+    font-weight: bold;
+    position: relative;
+    top: 1400px;
+    right: 2800px;
+}
+h9{
+    font-size:50px;
+    font-weight: bold;
+    position: relative;
+    top: 2550px;
+    right: 3100px;
+}
+h10{
+    font-size: 15px;
+    font-weight: lighter;
+    color: white;
+    white-space: pre;
+    position: relative;
+    top: 2570px;
+    right: 3070px;
+}
+
+/* PHOTOS OF ITERATIONS */
+.photos{
+    position: relative;
+    top: 2895px;
+    right: 3950px;
+}
+.photos-2{
+    position: relative;
+    top: 2895px;
+    right: 3900px;
+}
+.photos-3{
+    position: relative;
+    top: 2895px;
+    right: 3850px;
+}

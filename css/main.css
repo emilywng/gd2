@@ -1,24 +1,23 @@
 h1,h2,h3{
     color:rgb(43, 49, 131);
-    /* font-family: 'Coda Caption';font-size: 42px; */
-    font-family: 'Gravitas One';font-size:42px;
+    font-family: 'Anaheim';font-size:60px;
     position: relative; left:30px;
 }
 p1{
     color:rgb(43, 49, 131);
     font-family: 'Courier New', Courier, monospace;font-size:22px;
-    position: relative; left:280px; top:-100px;
+    position: relative; left:250px; top:-100px;
 }
 p2{
     color:rgb(43, 49, 131);
     font-family: 'Courier New', Courier, monospace;font-size:22px;
-    position: relative; left: 350px; top: -100px;
+    position: relative; left: 320px; top: -100px;
     
 }
 p3{
     color:rgb(43, 49, 131);
     font-family: 'Courier New', Courier, monospace;font-size:22px;
-    position: relative; left: 430px; top: -100px;
+    position: relative; left: 410px; top: -100px;
     
 }
 description{
